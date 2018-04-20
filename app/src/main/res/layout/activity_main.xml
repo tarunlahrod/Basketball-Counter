@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dabba.assign15.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/b1"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="71dp"
+        android:text=" Team A "
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/b2"
+        android:layout_marginStart="22dp"
+        android:text=" Team B "
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="25dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/t1"
+        android:layout_alignBottom="@+id/t1"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="12dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/b3"
+        android:layout_centerVertical="true"
+        android:background="#ff8800"
+        android:text="  +3 POINTS  "
+        android:textSize="20sp"
+        android:onClick="p3a"
+
+
+        />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/b4"
+        android:layout_centerVertical="true"
+        android:background="#ff8800"
+        android:text="  +3 POINTS  "
+        android:textSize="20sp"
+        android:onClick="p3b"/>
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/b4"
+        android:layout_alignBottom="@+id/b4"
+        android:layout_alignEnd="@+id/b5"
+        android:background="#ff8800"
+        android:text="  +2 POINTS  "
+        android:textSize="20sp"
+        android:onClick="p2a"/>
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/b6"
+        android:layout_alignStart="@+id/b6"
+        android:layout_marginBottom="22dp"
+        android:background="#ff8800"
+        android:text="  +2 POINTS  "
+        android:textSize="20sp"
+        android:onClick="p2b"/>
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/b6"
+        android:layout_toStartOf="@+id/b7"
+        android:background="#ff8800"
+        android:text="FREE \nTHROW"
+        android:textSize="20sp"
+        android:onClick="fta"/>
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/b7"
+        android:layout_marginBottom="26dp"
+        android:layout_toEndOf="@+id/b7"
+        android:background="#ff8800"
+        android:text="FREE \nTHROW"
+        android:textSize="20sp"
+        android:onClick="ftb"/>
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:background="#ff8800"
+        android:text="RESET"
+        android:textSize="20sp"
+        android:onClick="reset" />
+
+
+</RelativeLayout>
